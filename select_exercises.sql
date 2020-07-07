@@ -16,4 +16,4 @@ SELECT 'Which albums had less than 20 million certified sales' AS 'Query Five';
 SELECT `name`, sales FROM albums WHERE sales < 20;
 
 SELECT 'All Rock Genre albums' AS 'Query Six';
-SELECT `name`, genre FROM albums WHERE genre = 'Rock';
+SELECT `name`, genre FROM albums WHERE genre LIKE '%rock%';
