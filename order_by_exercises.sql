@@ -26,6 +26,3 @@ SELECT * FROM employees WHERE hire_date
 
 SELECT * FROM employees WHERE last_name LIKE '%q%';
 
-# Need to come back to this one
-SELECT * FROM employees WHERE last_name LIKE '%q$' AND last_name NOT LIKE '%qu%';
-
