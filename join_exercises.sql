@@ -23,6 +23,7 @@ FROM titles
 JOIN dept_emp ON titles.emp_no = dept_emp.emp_no
 JOIN departments on dept_emp.dept_no = departments.dept_no
 WHERE titles.to_date = '9999-01-01' AND departments.dept_name = 'Customer Service'
+AND dept_emp.to_date = '9999-01-01'
 GROUP BY title;
 
 # Find the current salary of all current managers.
